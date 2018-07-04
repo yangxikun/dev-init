@@ -63,6 +63,7 @@ plugins=(
   git
   zsh-autosuggestions
   kubectl
+  autojump
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -96,4 +97,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 setopt no_nomatch
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[[ -s /etc/profile.d/autojump.sh ]] && . /etc/profile.d/autojump.sh
